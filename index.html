@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="header-info">Etch-A-Sketch</div>
+    <div class="container">
+        <div class="options">
+            <input id="colorPicker" type="color">
+            <button id="randomColorBtn">Random</button>
+            <button id="eraseBtn">Erase</button>
+            <button id="clearBtn">Clear</button>
+            <!-- <input id="gridSizeText" type="number" placeholder="Grid size">
+            <button id="gridSizeBtn" class="gridBtn">Specify Grid Size</button> -->
+            <div id="gridSizeDiv">
+                <input id="gridSizeSlider" type="range" min="16" max="32">
+                <label for="gridSizeSlider">Current Grid Size:</label>
+                <span id="currentGridSize">16 x 16</span>
+            </div>
+        </div>
+        <div id="sketch" class="grid-container">
+        </div>
+    </div>
+</body>
+</html>
